@@ -1,0 +1,7 @@
+{
+"e2e": {
+    "baseUrl": "http://cypress.io",
+    "supportFile": false
+  }
+}
+

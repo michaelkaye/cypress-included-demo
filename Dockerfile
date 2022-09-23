@@ -1,4 +1,4 @@
-FROM cypress/included:10.6.0
+FROM cypress/included:9.7.0
 
 # Use libnss-wrapper to get around editing /etc/passwd
 RUN apt install libnss-wrapper
