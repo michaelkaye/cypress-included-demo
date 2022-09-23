@@ -1,0 +1,515 @@
+$ docker run -e DEBUG=cypress.* -u 1001:0 cypress-demo cypress verify
+2022-09-23T13:56:37.172Z cypress:cli:cli cli starts with arguments ["/usr/local/bin/node","/usr/local/bin/cypress","verify"]
+2022-09-23T13:56:37.173Z cypress:cli NODE_OPTIONS is not set
+2022-09-23T13:56:37.173Z cypress:cli:cli program parsing arguments
+2022-09-23T13:56:37.175Z cypress:cli parsed cli options {}
+2022-09-23T13:56:37.261Z cypress:cli verifying Cypress app
+2022-09-23T13:56:37.261Z cypress:cli Using CYPRESS_CACHE_FOLDER from environment variable
+2022-09-23T13:56:37.261Z cypress:cli Using CYPRESS_CACHE_FOLDER from environment variable
+2022-09-23T13:56:37.261Z cypress:cli using environment variable CYPRESS_CACHE_FOLDER /root/.cache/Cypress
+2022-09-23T13:56:37.262Z cypress:cli checking environment variables
+2022-09-23T13:56:37.265Z cypress:cli checking if executable exists /root/.cache/Cypress/9.7.0/Cypress/Cypress
+2022-09-23T13:56:37.266Z cypress:cli Binary is executable? : true
+2022-09-23T13:56:37.266Z cypress:cli binaryDir is  /root/.cache/Cypress/9.7.0/Cypress
+2022-09-23T13:56:37.267Z cypress:cli Reading binary package.json from: /root/.cache/Cypress/9.7.0/Cypress/resources/app/package.json
+2022-09-23T13:56:37.270Z cypress:cli Found binary version 9.7.0 installed in: /root/.cache/Cypress/9.7.0/Cypress
+2022-09-23T13:56:37.271Z cypress:cli { verified: true }
+2022-09-23T13:56:37.271Z cypress:cli is Verified ? true
+2022-09-23T13:56:37.272Z cypress:cli force verify
+2022-09-23T13:56:37.272Z cypress:cli running binary verification check 9.7.0
+[STARTED] Task without title.
+2022-09-23T13:56:37.275Z cypress:cli clearing out the verified version
+2022-09-23T13:56:37.277Z cypress:cli undefined DISPLAY environment variable
+2022-09-23T13:56:37.277Z cypress:cli Cypress will spawn its own Xvfb
+2022-09-23T13:56:37.277Z cypress:cli needs Xvfb? true
+2022-09-23T13:56:37.277Z cypress:cli Starting Xvfb
+2022-09-23T13:56:37.294Z cypress:cli disabling Electron sandbox
+2022-09-23T13:56:37.294Z cypress:cli running smoke test
+2022-09-23T13:56:37.294Z cypress:cli using Cypress executable /root/.cache/Cypress/9.7.0/Cypress/Cypress
+2022-09-23T13:56:37.294Z cypress:cli smoke test command: /root/.cache/Cypress/9.7.0/Cypress/Cypress --no-sandbox --smoke-test --ping=139
+2022-09-23T13:56:37.294Z cypress:cli smoke test timeout 30000 ms
+2022-09-23T13:56:38.561Z cypress:cli Smoke test failed: Error: Command was killed with SIGILL (Invalid machine instruction): /root/.cache/Cypress/9.7.0/Cypress/Cypress --no-sandbox --smoke-test --ping=139
+2022-09-23T13:56:37.454Z cypress:ts register TypeScript project /root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/ts/tsconfig.json fast? true
+2022-09-23T13:56:37.601Z cypress:ts Running without ts-node hook in environment "production"
+2022-09-23T13:56:37.851Z cypress:server:appdata path: /.config/Cypress/cy/production/browsers
+2022-09-23T13:56:38.428Z cypress:server:appdata path: /.config/Cypress/cy/production
+A JavaScript error occurred in the main process
+Uncaught Exception:
+Error: EACCES: permission denied, mkdir '/.config/Cypress/cy/production'
+    at Object.mkdirSync (node:fs:1334:3)
+    at Object.module.exports.makeDirSync (/root/.cache/Cypress/9.7.0/Cypress/resources/app/node_modules/fs-extra/lib/mkdirs/make-dir.js:101:15)
+    at createFile (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/logger.js:23:6)
+    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/logger.js:42:21)
+    at Module._compile (node:internal/modules/cjs/loader:1116:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:829:12)
+    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+    at Function.Module._load (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/override_require.js:15:27)
+    at Module.require (node:internal/modules/cjs/loader:1012:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/server-base.js:21:47)
+    at Module._compile (node:internal/modules/cjs/loader:1116:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:829:12)
+    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+    at Function.Module._load (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/override_require.js:15:27)
+    at Module.require (node:internal/modules/cjs/loader:1012:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/server-ct.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1116:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:829:12)
+    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+    at Function.Module._load (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/override_require.js:15:27)
+    at Module.require (node:internal/modules/cjs/loader:1012:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/project-base.js:25:21)
+    at Module._compile (node:internal/modules/cjs/loader:1116:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:829:12)
+    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+    at Module.require (node:internal/modules/cjs/loader:1012:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/open_project.js:11:24)
+    at Module._compile (node:internal/modules/cjs/loader:1116:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:829:12)
+    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+    at Module.require (node:internal/modules/cjs/loader:1012:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/cypress.js:16:25)
+    at Module._compile (node:internal/modules/cjs/loader:1116:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:829:12)
+    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+    at Module.require (node:internal/modules/cjs/loader:1012:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/index.js:39:18)
+    at Module._compile (node:internal/modules/cjs/loader:1116:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:829:12)
+    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+    at Module.require (node:internal/modules/cjs/loader:1012:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/index.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1116:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:829:12)
+    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+    at Object.<anonymous> (node:electron/js2c/browser_init:185:3104)
+    at Object../lib/browser/init.ts (node:electron/js2c/browser_init:185:3308)
+    at __webpack_require__ (node:electron/js2c/browser_init:1:128)
+    at node:electron/js2c/browser_init:1:1200
+    at node:electron/js2c/browser_init:1:1267
+    at NativeModule.compileForInternalLoader (node:internal/bootstrap/loaders:312:7)
+    at NativeModule.compileForPublicLoader (node:internal/bootstrap/loaders:252:10)
+    at loadNativeModule (node:internal/modules/cjs/helpers:49:9)
+    at Module._load (node:internal/modules/cjs/loader:811:15)
+    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+
+    at makeError (/usr/local/lib/node_modules/cypress/node_modules/execa/lib/error.js:59:11)
+    at handlePromise (/usr/local/lib/node_modules/cypress/node_modules/execa/index.js:114:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  shortMessage: 'Command was killed with SIGILL (Invalid machine instruction): /root/.cache/Cypress/9.7.0/Cypress/Cypress --no-sandbox --smoke-test --ping=139',
+  command: '/root/.cache/Cypress/9.7.0/Cypress/Cypress --no-sandbox --smoke-test --ping=139',
+  exitCode: undefined,
+  signal: 'SIGILL',
+  signalDescription: 'Invalid machine instruction',
+  stdout: '',
+  stderr: '2022-09-23T13:56:37.454Z cypress:ts register TypeScript project /root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/ts/tsconfig.json fast? true\n' +
+    '2022-09-23T13:56:37.601Z cypress:ts Running without ts-node hook in environment "production"\n' +
+    '2022-09-23T13:56:37.851Z cypress:server:appdata path: /.config/Cypress/cy/production/browsers\n' +
+    '2022-09-23T13:56:38.428Z cypress:server:appdata path: /.config/Cypress/cy/production\n' +
+    '\x1B[1m\x1B[47m\x1B[31mA JavaScript error occurred in the main process\n' +
+    '\x1B[30mUncaught Exception:\n' +
+    "Error: EACCES: permission denied, mkdir '/.config/Cypress/cy/production'\n" +
+    '    at Object.mkdirSync (node:fs:1334:3)\n' +
+    '    at Object.module.exports.makeDirSync (/root/.cache/Cypress/9.7.0/Cypress/resources/app/node_modules/fs-extra/lib/mkdirs/make-dir.js:101:15)\n' +
+    '    at createFile (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/logger.js:23:6)\n' +
+    '    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/logger.js:42:21)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1116:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:988:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:829:12)\n' +
+    '    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)\n' +
+    '    at Function.Module._load (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/override_require.js:15:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1012:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/server-base.js:21:47)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1116:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:988:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:829:12)\n' +
+    '    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)\n' +
+    '    at Function.Module._load (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/override_require.js:15:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1012:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/server-ct.js:7:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1116:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:988:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:829:12)\n' +
+    '    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)\n' +
+    '    at Function.Module._load (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/override_require.js:15:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1012:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/project-base.js:25:21)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1116:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:988:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:829:12)\n' +
+    '    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1012:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/open_project.js:11:24)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1116:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:988:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:829:12)\n' +
+    '    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1012:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/cypress.js:16:25)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1116:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:988:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:829:12)\n' +
+    '    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1012:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/index.js:39:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1116:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:988:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:829:12)\n' +
+    '    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1012:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/index.js:2:1)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1116:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:988:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:829:12)\n' +
+    '    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)\n' +
+    '    at Object.<anonymous> (node:electron/js2c/browser_init:185:3104)\n' +
+    '    at Object../lib/browser/init.ts (node:electron/js2c/browser_init:185:3308)\n' +
+    '    at __webpack_require__ (node:electron/js2c/browser_init:1:128)\n' +
+    '    at node:electron/js2c/browser_init:1:1200\n' +
+    '    at node:electron/js2c/browser_init:1:1267\n' +
+    '    at NativeModule.compileForInternalLoader (node:internal/bootstrap/loaders:312:7)\n' +
+    '    at NativeModule.compileForPublicLoader (node:internal/bootstrap/loaders:252:10)\n' +
+    '    at loadNativeModule (node:internal/modules/cjs/helpers:49:9)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:811:15)\n' +
+    '    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n' +
+    '    at node:internal/main/run_main_module:17:47\n' +
+    '\x1B[0m',
+  failed: true,
+  timedOut: false,
+  isCanceled: false,
+  killed: false
+}
+2022-09-23T13:56:38.563Z cypress:cli error message: 2022-09-23T13:56:37.454Z cypress:ts register TypeScript project /root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/ts/tsconfig.json fast? true
+2022-09-23T13:56:37.601Z cypress:ts Running without ts-node hook in environment "production"
+2022-09-23T13:56:37.851Z cypress:server:appdata path: /.config/Cypress/cy/production/browsers
+2022-09-23T13:56:38.428Z cypress:server:appdata path: /.config/Cypress/cy/production
+A JavaScript error occurred in the main process
+Uncaught Exception:
+Error: EACCES: permission denied, mkdir '/.config/Cypress/cy/production'
+    at Object.mkdirSync (node:fs:1334:3)
+    at Object.module.exports.makeDirSync (/root/.cache/Cypress/9.7.0/Cypress/resources/app/node_modules/fs-extra/lib/mkdirs/make-dir.js:101:15)
+    at createFile (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/logger.js:23:6)
+    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/logger.js:42:21)
+    at Module._compile (node:internal/modules/cjs/loader:1116:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:829:12)
+    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+    at Function.Module._load (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/override_require.js:15:27)
+    at Module.require (node:internal/modules/cjs/loader:1012:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/server-base.js:21:47)
+    at Module._compile (node:internal/modules/cjs/loader:1116:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:829:12)
+    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+    at Function.Module._load (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/override_require.js:15:27)
+    at Module.require (node:internal/modules/cjs/loader:1012:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/server-ct.js:7:23)
+    at Module._compile (node:internal/modules/cjs/loader:1116:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:829:12)
+    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+    at Function.Module._load (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/override_require.js:15:27)
+    at Module.require (node:internal/modules/cjs/loader:1012:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/project-base.js:25:21)
+    at Module._compile (node:internal/modules/cjs/loader:1116:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:829:12)
+    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+    at Module.require (node:internal/modules/cjs/loader:1012:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/open_project.js:11:24)
+    at Module._compile (node:internal/modules/cjs/loader:1116:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:829:12)
+    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+    at Module.require (node:internal/modules/cjs/loader:1012:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/cypress.js:16:25)
+    at Module._compile (node:internal/modules/cjs/loader:1116:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:829:12)
+    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+    at Module.require (node:internal/modules/cjs/loader:1012:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/index.js:39:18)
+    at Module._compile (node:internal/modules/cjs/loader:1116:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:829:12)
+    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+    at Module.require (node:internal/modules/cjs/loader:1012:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/index.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1116:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Module._load (node:internal/modules/cjs/loader:829:12)
+    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+    at Object.<anonymous> (node:electron/js2c/browser_init:185:3104)
+    at Object../lib/browser/init.ts (node:electron/js2c/browser_init:185:3308)
+    at __webpack_require__ (node:electron/js2c/browser_init:1:128)
+    at node:electron/js2c/browser_init:1:1200
+    at node:electron/js2c/browser_init:1:1267
+    at NativeModule.compileForInternalLoader (node:internal/bootstrap/loaders:312:7)
+    at NativeModule.compileForPublicLoader (node:internal/bootstrap/loaders:252:10)
+    at loadNativeModule (node:internal/modules/cjs/helpers:49:9)
+    at Module._load (node:internal/modules/cjs/loader:811:15)
+    at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+
+2022-09-23T13:56:38.570Z cypress:cli Stopping Xvfb
+[FAILED] Cypress failed to start.
+[FAILED] 
+[FAILED] This may be due to a missing library or dependency. https://on.cypress.io/required-dependencies
+[FAILED] 
+[FAILED] Please refer to the error below for more details.
+[FAILED] 
+[FAILED] ----------
+[FAILED] 
+[FAILED] 2022-09-23T13:56:37.454Z cypress:ts register TypeScript project /root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/ts/tsconfig.json fast? true
+[FAILED] 2022-09-23T13:56:37.601Z cypress:ts Running without ts-node hook in environment "production"
+[FAILED] 2022-09-23T13:56:37.851Z cypress:server:appdata path: /.config/Cypress/cy/production/browsers
+[FAILED] 2022-09-23T13:56:38.428Z cypress:server:appdata path: /.config/Cypress/cy/production
+[FAILED] A JavaScript error occurred in the main process
+[FAILED] Uncaught Exception:
+[FAILED] Error: EACCES: permission denied, mkdir '/.config/Cypress/cy/production'
+[FAILED] at Object.mkdirSync (node:fs:1334:3)
+[FAILED] at Object.module.exports.makeDirSync (/root/.cache/Cypress/9.7.0/Cypress/resources/app/node_modules/fs-extra/lib/mkdirs/make-dir.js:101:15)
+[FAILED] at createFile (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/logger.js:23:6)
+[FAILED] at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/logger.js:42:21)
+[FAILED] at Module._compile (node:internal/modules/cjs/loader:1116:14)
+[FAILED] at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+[FAILED] at Module.load (node:internal/modules/cjs/loader:988:32)
+[FAILED] at Module._load (node:internal/modules/cjs/loader:829:12)
+[FAILED] at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+[FAILED] at Function.Module._load (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/override_require.js:15:27)
+[FAILED] at Module.require (node:internal/modules/cjs/loader:1012:19)
+[FAILED] at require (node:internal/modules/cjs/helpers:102:18)
+[FAILED] at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/server-base.js:21:47)
+[FAILED] at Module._compile (node:internal/modules/cjs/loader:1116:14)
+[FAILED] at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+[FAILED] at Module.load (node:internal/modules/cjs/loader:988:32)
+[FAILED] at Module._load (node:internal/modules/cjs/loader:829:12)
+[FAILED] at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+[FAILED] at Function.Module._load (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/override_require.js:15:27)
+[FAILED] at Module.require (node:internal/modules/cjs/loader:1012:19)
+[FAILED] at require (node:internal/modules/cjs/helpers:102:18)
+[FAILED] at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/server-ct.js:7:23)
+[FAILED] at Module._compile (node:internal/modules/cjs/loader:1116:14)
+[FAILED] at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+[FAILED] at Module.load (node:internal/modules/cjs/loader:988:32)
+[FAILED] at Module._load (node:internal/modules/cjs/loader:829:12)
+[FAILED] at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+[FAILED] at Function.Module._load (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/override_require.js:15:27)
+[FAILED] at Module.require (node:internal/modules/cjs/loader:1012:19)
+[FAILED] at require (node:internal/modules/cjs/helpers:102:18)
+[FAILED] at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/project-base.js:25:21)
+[FAILED] at Module._compile (node:internal/modules/cjs/loader:1116:14)
+[FAILED] at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+[FAILED] at Module.load (node:internal/modules/cjs/loader:988:32)
+[FAILED] at Module._load (node:internal/modules/cjs/loader:829:12)
+[FAILED] at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+[FAILED] at Module.require (node:internal/modules/cjs/loader:1012:19)
+[FAILED] at require (node:internal/modules/cjs/helpers:102:18)
+[FAILED] at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/open_project.js:11:24)
+[FAILED] at Module._compile (node:internal/modules/cjs/loader:1116:14)
+[FAILED] at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+[FAILED] at Module.load (node:internal/modules/cjs/loader:988:32)
+[FAILED] at Module._load (node:internal/modules/cjs/loader:829:12)
+[FAILED] at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+[FAILED] at Module.require (node:internal/modules/cjs/loader:1012:19)
+[FAILED] at require (node:internal/modules/cjs/helpers:102:18)
+[FAILED] at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/cypress.js:16:25)
+[FAILED] at Module._compile (node:internal/modules/cjs/loader:1116:14)
+[FAILED] at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+[FAILED] at Module.load (node:internal/modules/cjs/loader:988:32)
+[FAILED] at Module._load (node:internal/modules/cjs/loader:829:12)
+[FAILED] at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+[FAILED] at Module.require (node:internal/modules/cjs/loader:1012:19)
+[FAILED] at require (node:internal/modules/cjs/helpers:102:18)
+[FAILED] at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/index.js:39:18)
+[FAILED] at Module._compile (node:internal/modules/cjs/loader:1116:14)
+[FAILED] at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+[FAILED] at Module.load (node:internal/modules/cjs/loader:988:32)
+[FAILED] at Module._load (node:internal/modules/cjs/loader:829:12)
+[FAILED] at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+[FAILED] at Module.require (node:internal/modules/cjs/loader:1012:19)
+[FAILED] at require (node:internal/modules/cjs/helpers:102:18)
+[FAILED] at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/index.js:2:1)
+[FAILED] at Module._compile (node:internal/modules/cjs/loader:1116:14)
+[FAILED] at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+[FAILED] at Module.load (node:internal/modules/cjs/loader:988:32)
+[FAILED] at Module._load (node:internal/modules/cjs/loader:829:12)
+[FAILED] at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+[FAILED] at Object.<anonymous> (node:electron/js2c/browser_init:185:3104)
+[FAILED] at Object../lib/browser/init.ts (node:electron/js2c/browser_init:185:3308)
+[FAILED] at __webpack_require__ (node:electron/js2c/browser_init:1:128)
+[FAILED] at node:electron/js2c/browser_init:1:1200
+[FAILED] at node:electron/js2c/browser_init:1:1267
+[FAILED] at NativeModule.compileForInternalLoader (node:internal/bootstrap/loaders:312:7)
+[FAILED] at NativeModule.compileForPublicLoader (node:internal/bootstrap/loaders:252:10)
+[FAILED] at loadNativeModule (node:internal/modules/cjs/helpers:49:9)
+[FAILED] at Module._load (node:internal/modules/cjs/loader:811:15)
+[FAILED] at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+[FAILED] at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[FAILED] at node:internal/main/run_main_module:17:47
+[FAILED] 
+[FAILED] 
+[FAILED] ----------
+[FAILED] 
+[FAILED] Platform: linux-x64 (Debian - 11.3)
+[FAILED] Cypress Version: 9.7.0
+Cypress failed to start.
+
+This may be due to a missing library or dependency. https://on.cypress.io/required-dependencies
+
+Please refer to the error below for more details.
+
+----------
+
+2022-09-23T13:56:37.454Z cypress:ts register TypeScript project /root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/ts/tsconfig.json fast? true
+2022-09-23T13:56:37.601Z cypress:ts Running without ts-node hook in environment "production"
+2022-09-23T13:56:37.851Z cypress:server:appdata path: /.config/Cypress/cy/production/browsers
+2022-09-23T13:56:38.428Z cypress:server:appdata path: /.config/Cypress/cy/production
+A JavaScript error occurred in the main process
+Uncaught Exception:
+Error: EACCES: permission denied, mkdir '/.config/Cypress/cy/production'
+at Object.mkdirSync (node:fs:1334:3)
+at Object.module.exports.makeDirSync (/root/.cache/Cypress/9.7.0/Cypress/resources/app/node_modules/fs-extra/lib/mkdirs/make-dir.js:101:15)
+at createFile (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/logger.js:23:6)
+at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/logger.js:42:21)
+at Module._compile (node:internal/modules/cjs/loader:1116:14)
+at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+at Module.load (node:internal/modules/cjs/loader:988:32)
+at Module._load (node:internal/modules/cjs/loader:829:12)
+at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+at Function.Module._load (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/override_require.js:15:27)
+at Module.require (node:internal/modules/cjs/loader:1012:19)
+at require (node:internal/modules/cjs/helpers:102:18)
+at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/server-base.js:21:47)
+at Module._compile (node:internal/modules/cjs/loader:1116:14)
+at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+at Module.load (node:internal/modules/cjs/loader:988:32)
+at Module._load (node:internal/modules/cjs/loader:829:12)
+at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+at Function.Module._load (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/override_require.js:15:27)
+at Module.require (node:internal/modules/cjs/loader:1012:19)
+at require (node:internal/modules/cjs/helpers:102:18)
+at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/server-ct.js:7:23)
+at Module._compile (node:internal/modules/cjs/loader:1116:14)
+at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+at Module.load (node:internal/modules/cjs/loader:988:32)
+at Module._load (node:internal/modules/cjs/loader:829:12)
+at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+at Function.Module._load (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/override_require.js:15:27)
+at Module.require (node:internal/modules/cjs/loader:1012:19)
+at require (node:internal/modules/cjs/helpers:102:18)
+at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/project-base.js:25:21)
+at Module._compile (node:internal/modules/cjs/loader:1116:14)
+at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+at Module.load (node:internal/modules/cjs/loader:988:32)
+at Module._load (node:internal/modules/cjs/loader:829:12)
+at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+at Module.require (node:internal/modules/cjs/loader:1012:19)
+at require (node:internal/modules/cjs/helpers:102:18)
+at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/open_project.js:11:24)
+at Module._compile (node:internal/modules/cjs/loader:1116:14)
+at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+at Module.load (node:internal/modules/cjs/loader:988:32)
+at Module._load (node:internal/modules/cjs/loader:829:12)
+at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+at Module.require (node:internal/modules/cjs/loader:1012:19)
+at require (node:internal/modules/cjs/helpers:102:18)
+at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/lib/cypress.js:16:25)
+at Module._compile (node:internal/modules/cjs/loader:1116:14)
+at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+at Module.load (node:internal/modules/cjs/loader:988:32)
+at Module._load (node:internal/modules/cjs/loader:829:12)
+at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+at Module.require (node:internal/modules/cjs/loader:1012:19)
+at require (node:internal/modules/cjs/helpers:102:18)
+at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/packages/server/index.js:39:18)
+at Module._compile (node:internal/modules/cjs/loader:1116:14)
+at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+at Module.load (node:internal/modules/cjs/loader:988:32)
+at Module._load (node:internal/modules/cjs/loader:829:12)
+at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+at Module.require (node:internal/modules/cjs/loader:1012:19)
+at require (node:internal/modules/cjs/helpers:102:18)
+at Object.<anonymous> (/root/.cache/Cypress/9.7.0/Cypress/resources/app/index.js:2:1)
+at Module._compile (node:internal/modules/cjs/loader:1116:14)
+at Object.Module._extensions..js (node:internal/modules/cjs/loader:1169:10)
+at Module.load (node:internal/modules/cjs/loader:988:32)
+at Module._load (node:internal/modules/cjs/loader:829:12)
+at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+at Object.<anonymous> (node:electron/js2c/browser_init:185:3104)
+at Object../lib/browser/init.ts (node:electron/js2c/browser_init:185:3308)
+at __webpack_require__ (node:electron/js2c/browser_init:1:128)
+at node:electron/js2c/browser_init:1:1200
+at node:electron/js2c/browser_init:1:1267
+at NativeModule.compileForInternalLoader (node:internal/bootstrap/loaders:312:7)
+at NativeModule.compileForPublicLoader (node:internal/bootstrap/loaders:252:10)
+at loadNativeModule (node:internal/modules/cjs/helpers:49:9)
+at Module._load (node:internal/modules/cjs/loader:811:15)
+at Function.c._load (node:electron/js2c/asar_bundle:5:13343)
+at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+at node:internal/main/run_main_module:17:47
+
+
+----------
+
+Platform: linux-x64 (Debian - 11.3)
+Cypress Version: 9.7.0
+
+
+
